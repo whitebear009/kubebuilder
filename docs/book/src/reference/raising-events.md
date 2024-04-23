@@ -7,7 +7,7 @@ It is often useful to publish *Event* objects from the controller Reconcile func
 <aside class="warning">
 <h1>Events should be raised in certain circumstances only</h1>
 
-Be aware that it is **not** recommended to emit Events for all operations. If authors raise too many events, it brings bad UX experiences for those consuming the solutions on the cluster, and they may find it difficult to filter an actionable event from the clutter. For more information, please take a look at the [Kubernetes APIs convention][Events].
+Be aware that it is **not** recommended to emit Events for all operations. If authors raise too many events, it brings bad UX experiences for those consuming the solutions on the cluster, and they may find it difficult to filter an actionable event from the cluster. For more information, please take a look at the [Kubernetes APIs convention][Events].
 
 </aside>
 
@@ -110,4 +110,4 @@ And then, run `$ make manifests` to update the rules under `config/rbac/role.yam
 [Event-Example]: https://github.com/kubernetes/api/blob/6c11c9e4685cc62e4ddc8d4aaa824c46150c9148/core/v1/types.go#L6019-L6024
 [Reason-Example]: https://github.com/kubernetes/api/blob/6c11c9e4685cc62e4ddc8d4aaa824c46150c9148/core/v1/types.go#L6048
 [Message-Example]: https://github.com/kubernetes/api/blob/6c11c9e4685cc62e4ddc8d4aaa824c46150c9148/core/v1/types.go#L6053
-[rbac-markers]: ./markers/rbac.md
+[rbac-markers]: ./markers/rbac.md 
